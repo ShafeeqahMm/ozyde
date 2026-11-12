@@ -1,16 +1,65 @@
-# React + Vite
+# Ozyde – Dress Rental Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ozyde is a web-based dress rental platform designed to make renting dresses simple and convenient. Users can browse available dresses, view individual dress details, create accounts, and manage their rental selections.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **User Authentication:** Sign up and sign in functionality.
+- **Dress Catalogue:** Browse available dresses.
+- **Dress Details:** View individual dress information, including images and rental details.
+- **Shopping Cart:** Add dresses to the cart, review selections, and manage cart items.
+- **Checkout:** Proceed to checkout and complete the rental booking process.
+- **Rental Management:** Navigate the dress rental process.
+- **Responsive Interface:** User-friendly website layout.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React.js
+- **Build Tool:** Vite
+- **Styling:** CSS
+- **Backend / Database:** Supabase
+- **Authentication:** Supabase Authentication
+- **Version Control:** Git and GitHub
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ShafeeqahMm/ozyde.git
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd ozyde
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Create a `.env` file in the root directory and configure your Supabase environment variables.
+
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+## Environment Variables
+
+The project requires Supabase configuration. Add the appropriate environment variables to your local `.env` file. Do not commit environment files or expose API credentials.
+
+## Project Status
+
+Under development.
