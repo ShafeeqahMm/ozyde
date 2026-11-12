@@ -1,0 +1,818 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f6f3;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* NAVBAR */
+
+/* NAVBAR */
+
+.navbar {
+  height: 80px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f6f3;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navbar nav a {
+  font-size: 14px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-button,
+.cart-button {
+  padding: 10px 18px;
+  border: 1px solid #222;
+  background: transparent;
+}
+
+.cart-button {
+  background: #222;
+  color: white;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+  background: #e9e0d8;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: clamp(60px, 8vw, 110px);
+  line-height: 0.95;
+  font-weight: 500;
+  letter-spacing: -4px;
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  max-width: 480px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 15px 28px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+}
+
+/* INTRO */
+
+.intro {
+  text-align: center;
+  padding: 120px 20px;
+  max-width: 750px;
+  margin: auto;
+}
+
+.intro h2 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.intro p:last-child {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* DRESSES PAGE */
+
+.dresses-page {
+  padding: 80px 6%;
+}
+
+.dresses-header {
+  max-width: 650px;
+  margin-bottom: 70px;
+}
+
+.dresses-header h1 {
+  font-size: 72px;
+  font-weight: 500;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+}
+
+.dresses-header > p:last-child {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.dress-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.dress-card {
+  background: #fff;
+  padding-bottom: 25px;
+}
+
+.dress-image {
+  height: 380px;
+  background: #e5dfd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.dress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 5px;
+  margin-bottom: 20px;
+}
+
+.dress-info h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.dress-info p {
+  font-size: 14px;
+  color: #777;
+}
+
+.dress-info strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.view-button {
+  width: calc(100% - 10px);
+  margin: 0 5px;
+  padding: 14px;
+  border: 1px solid #222;
+  background: transparent;
+  font-size: 14px;
+}
+
+.view-button:hover {
+  background: #222;
+  color: white;
+}
+
+/* DRESS CARD HOVER */
+
+.dress-card {
+  background: #fff;
+  padding-bottom: 25px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.dress-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.dress-image {
+  overflow: hidden;
+}
+
+.dress-image span {
+  transition: transform 0.4s ease;
+}
+
+.dress-card:hover .dress-image span {
+  transform: scale(1.05);
+}
+
+.view-button {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* DRESS DETAILS PAGE */
+
+.dress-details {
+  padding: 80px 6%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* IMAGE GALLERY */
+
+.dress-gallery {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 20px;
+}
+
+.thumbnail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.thumbnail-list img {
+  width: 90px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail-list img:hover {
+  opacity: 0.8;
+}
+
+.thumbnail-list img.active-thumbnail {
+  border-color: #222;
+}
+
+.main-dress-image {
+  height: 600px;
+  background: #e5dfd9;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.main-dress-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DRESS INFORMATION */
+
+.dress-details-info {
+  padding-top: 20px;
+}
+
+.dress-details-info h1 {
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+
+.dress-price {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.dress-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.dress-sizes h3 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.size-options button {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  background: transparent;
+}
+
+.size-options button:hover {
+  border-color: #222;
+}
+
+.rent-button {
+  width: 100%;
+  padding: 17px;
+  border: none;
+  background: #222;
+  color: white;
+  font-size: 15px;
+}
+
+/* CARE & MATERIAL */
+
+.dress-extra-info {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+}
+
+.info-section {
+  padding: 25px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-section h3 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.info-section p,
+.info-section li {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.info-section ul {
+  padding-left: 18px;
+}
+
+/* ============================= */
+/* RENTAL CALENDAR */
+/* ============================= */
+
+.rent-page {
+  padding: 80px 6%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.rent-header {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.rent-header h1 {
+  font-size: 52px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.rent-header p:last-child {
+  color: #666;
+  line-height: 1.6;
+}
+
+.booking-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 50px;
+  align-items: start;
+}
+
+.calendar-section {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 35px;
+  background: white;
+}
+
+.calendar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.calendar-top h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.month-arrow {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.calendar-weekdays,
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-weekdays {
+  margin-bottom: 10px;
+}
+
+.calendar-weekdays span {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #777;
+  padding: 10px;
+}
+
+.calendar-empty {
+  height: 65px;
+}
+
+.calendar-day {
+  height: 65px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.calendar-day:hover:not(:disabled) {
+  border-color: #222;
+  transform: translateY(-2px);
+}
+
+/* Unavailable = grey, no cross or strikethrough */
+.calendar-day.unavailable {
+  background: #dedede;
+  color: #777;
+  border-color: #dedede;
+  cursor: not-allowed;
+}
+
+.calendar-day.past {
+  background: #eeeeee;
+  color: #aaaaaa;
+  border-color: #eeeeee;
+  cursor: not-allowed;
+}
+
+/* Your selected rental = black */
+.calendar-day.selected {
+  background: #222;
+  color: white;
+  border-color: #222;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* LEGEND */
+/* ============================= */
+
+.calendar-legend {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #eee;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.legend-box {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.available-box {
+  background: white;
+  border: 1px solid #ccc;
+}
+
+.unavailable-box {
+  background: #dedede;
+}
+
+.selected-box {
+  background: #222;
+}
+
+
+/* ============================= */
+/* RENTAL SUMMARY */
+/* ============================= */
+
+.booking-summary {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 30px;
+  background: white;
+}
+
+.booking-summary h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.summary-row span {
+  color: #777;
+}
+
+.summary-row strong {
+  font-weight: 500;
+  text-align: right;
+}
+
+.add-cart-button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 30px;
+  background: #222;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.add-cart-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* CART MODAL */
+
+.cart-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.cart-modal {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  background: white;
+  border-radius: 16px;
+  padding: 45px 40px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.cart-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  color: #555;
+  cursor: pointer;
+}
+
+.cart-modal-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.cart-modal h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.cart-modal p:not(.eyebrow) {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cart-modal-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.continue-shopping-button,
+.view-cart-button {
+  flex: 1;
+  padding: 14px 18px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.continue-shopping-button {
+  background: white;
+  border: 1px solid #222;
+  color: #222;
+}
+
+.view-cart-button {
+  background: #222;
+  border: 1px solid #222;
+  color: white;
+}
+
+/* CART PAGE */
+
+.cart-page {
+  padding: 80px 6%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.cart-header {
+  margin-bottom: 50px;
+}
+
+.cart-header h1 {
+  font-size: 52px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.cart-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 50px;
+  align-items: start;
+}
+
+.cart-item {
+  display: flex;
+  gap: 25px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.cart-item-info h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 8px 0 18px;
+}
+
+.cart-item-info p:not(.eyebrow) {
+  color: #0d0202;
+  margin-bottom: 10px;
+}
+
+.cart-item-info strong {
+  display: block;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.remove-cart-button {
+  margin-top: 20px;
+  padding: 10px 18px;
+  background: white;
+  border: 1px solid #222;
+  cursor: pointer;
+}
+
+.cart-summary {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.cart-summary h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.checkout-button,
+.cart-shop-button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 25px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cart-empty h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.cart-empty > p:not(.eyebrow) {
+  color: #666;
+}
+
+.cart-empty .cart-shop-button {
+  max-width: 220px;
+}
+
+.size-options button {
+  padding: 12px 20px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.size-options button:hover {
+  border-color: #222;
+}
+
+.size-options button.selected-size {
+  background: #222;
+  color: white;
+  border-color: #222;
+}
+
+.rent-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
